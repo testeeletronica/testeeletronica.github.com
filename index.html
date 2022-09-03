@@ -9,8 +9,40 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <meta name="author" content="Pedro">
     <!--Informa no mecanismo de busco o autor-->
-    <meta name="description" content="O que está acontecendo">
+    <meta name="description" content="html,css,jv">
     <!--Descreve assim que for pesquisado-->
-    <meta name="keywords" content="memes">
+    <meta name="keywords" content="agenda">
     <!--Palavras chaves a serem encontradas-->
-    <title>MeMes do Momento</title>
+    <title>Agenda Eletrônica</title>
+    <link href="style.css" rel="stylesheet"/>
+</head>
+
+<body>
+    <div class="app">
+        <div class="content-form">
+            <form id="app-form">
+                <div class="input-group">
+                    <input id="pessoaNome" placeholder="primeiro nome"/>
+                    <input id="pessoaSobrenome" placeholder="sobrenome"/>
+                </div>
+                <div class="input-group">
+                    <input type="number" id="pessoaTelefone" placeholder="(ddd)telefone"/>
+                    <button class="btn-app" id="btnCadastrar" type="submit">Cadastrar</button>
+                    <button class="btn-app" id="btnEditar" type="button" style="display:none;">Editar</button>
+                </div>
+            </form>
+        </div>
+        <div class="content-action">
+            <div class="content-action-buttons">
+                <button class="btn-app" id="btnExemplo">Gerar lista de Exemplo</button>
+                <button class="btn-app" id="btnOrdenar">Ordernar</button>
+            </div>
+        </div>
+    </div>
+    <div class="content-list">
+        <div class="content-list-container">
+            <ul id="listaPessoas"></ul>
+        </div>
+    </div>
+</body>
+
